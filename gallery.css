@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+
+   .barra{display: grid;
+  grid-template-columns: 1fr;
+  background-color: rgb(255, 255, 255);
+  width: 90px;
+  height: 100vh;
+  z-index: 13;
+  }
+
+  .quadpreto{
+    height: 90px;
+    width: 90px;
+    background-color: #0f0f0f;
+    z-index: 180;
+    transition: 0.5s;
+  }
+
+  .menu>svg{
+    height: 30px;
+    width: 30px;
+    z-index: 200;
+    z-index: 14;
+  }
+  .menu{
+    height: 30px;
+    width: 30px;
+    z-index: 200;
+    padding-left: 32%;
+    padding-top: 32%;
+    z-index: 8700;
+  }
+
+  .links{
+    display: grid;
+    grid-template-columns: 1 1 1 1;
+    padding-left: 36%;
+    width: 18px;
+    height: 258px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .links>svg{
+    width: 18px;
+    height: 18px;
+  }
+
+  #menubtn{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  z-index: 9999999;
+  opacity: 0;
+}
+
+.btnvoltar{
+  width: 90px;
+  height: 90px;
+  background-color: #0f0f0f;
+  padding-top: 30px;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: 90000;
+  }
+
+.tulenbtn{
+  position: absolute;
+  top: 0;
+  left: 90px;
+  background-color: #2916e0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 90px;
+}
+
+.partebranca{
+  display: flex;
+  width: 270px;
+  height: 100vh;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  padding-top: 18%;
+}
+
+.txtbox{
+  display: flex;
+  list-style: none;
+  text-align: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.links2{
+  display: block;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 15px;
+  padding-right: 35px;
+  color: #b2b2b2;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+#home.active{
+  display: block;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 15px;
+  padding-right: 35px;
+  color: #2916e0;
+  transition: 0.3s;
+  text-decoration: none;
+}
+#about.active{
+  display: block;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 15px;
+  padding-right: 35px;
+  color: #2916e0;
+  transition: 0.3s;
+  text-decoration: none;
+}
+#gallery.active{
+  display: block;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 15px;
+  padding-right: 35px;
+  color: #2916e0;
+  transition: 0.3s;
+  text-decoration: none;
+}
+#blog.active{
+  display: block;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 15px;
+  padding-right: 35px;
+  color: #2916e0;
+  transition: 0.3s;
+  text-decoration: none;
+}
+#contact.active{
+  display: block;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 15px;
+  padding-right: 35px;
+  color: #2916e0;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.links2:hover{
+  display: block;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 15px;
+  padding-right: 35px;
+  color: #2916e0;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.menu2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 300px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 100000;
+}
+
+#menubtn:checked~.menu2{
+  transform: translateX(0);
+  transition: 0.5s;
+}
+
+#menubtn:checked~.quadpreto{
+  transform: translateX(-100%);
+  transition: 0.5s;
+}
+
+#menubtn:checked~.links{
+  transform: translateX(-100%);
+  transition: 0.5s;
+}
+
+.copyr{
+  padding-right: 30px;
+  text-align: center;
+  height: 174px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.copytxt{
+    font-size: 15px;
+    color: #636363;
+    line-height: 1.8;
+    font-weight: bold;
+}
+
+.svg2{
+  display: flex;
+  justify-content: space-around;
+  width: 240px;
+  height: 37px;
+  padding-left: 12%;
+}
+
+.colorlib{
+  text-decoration: none;
+  color: #b2b2b2;
+}
+
+.colorlib:hover{
+  text-decoration: none;
+  color: #2916e0;
+}
+
+.headerg{
+    position: absolute;
+    width: 100%;
+    left: 200px;
+    top: 0;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-right: 74px;
+    padding-left: 210px;
+    z-index: 99;
+}
+
+.boxfiltro{
+    list-style: none;
+    float: right;
+    padding-right: 190px;
+    margin: 0;
+}
+
+.boxfiltro>p{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #252525;
+    margin-left: 35px;
+}
+
+.gallerytxt{
+    float: left;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.gallerybox {
+    padding-top: 88px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    margin-left: -50px;
+    margin-right: -5px;
+    margin: 0 10px 10px 10px;
+    padding-bottom: 10px;
+    gap: 10px;
+}
+
+
+.itemgallery {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+#mulher{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+#carro{
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+#fone{
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+#berinjela{
+    grid-row: span 2;
+}
+
+#mar{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+#calango{
+    grid-column: span 2;
+}
+
+#biscoito{
+    grid-column: span 1;
+}
+
+#laranja{
+    grid-column: span 1;
+}
+
+#fazendeiro{
+   
+    grid-column: span 1;
+}
+
+#mar2{
+    grid-column: span 2;
+}
+
+#maotinta{
+    grid-column: span 1;
+}
+
+.allr{
+  width: 52px;
+  height: 22px;
+  position: absolute;
+  right: 780px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.featured{
+  width: 83.59px;
+  height: 22px;
+  position: absolute;
+  right: 670px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.people{
+  width: 83px;
+  height: 22px;
+  position: absolute;
+  right: 560px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nature{
+  width: 83px;
+  height: 22px;
+  position: absolute;
+  right: 450px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.animal{
+  width: 83px;
+  height: 22px;
+  position: absolute;
+  right: 346px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.travel{
+  width: 83px;
+  height: 22px;
+  position: absolute;
+  right: 250px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+input:checked+p{
+  color: #2916e0;
+}

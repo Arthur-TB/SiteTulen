@@ -291,7 +291,7 @@ body{
     grid-auto-rows: auto;
     margin-left: -50px;
     margin-right: -5px;
-    margin: 0 10px 10px 10px;
+    margin: 0 10px 10px 1px;
     padding-bottom: 10px;
     gap: 10px;
 }

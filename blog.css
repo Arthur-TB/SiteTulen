@@ -251,76 +251,173 @@ body{
   color: #2916e0;
 }
 
-.gallerybox {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-auto-rows: auto ;
-  margin-left: -5px;
-  margin-right: -5px;
-  margin: 0 10px 10px 10px;
-  gap: 10px;
-}
-
-
-.itemgallery {
-  height: 100%;
-  margin-bottom: 10px;
-  padding: 0;
+.  .item {
+  position: relative;
   overflow: hidden;
 }
 
-#fone{
-  grid-column: span 3 ;
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-#maoroxa{
-  grid-column: span 3 ;
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 350px);
+  grid-template-rows: 214px 90px 165px 70px 60px 60px 70px 120px 1fr;
+  gap: 10px;
 }
 
-#holofote{
-  grid-column: span 2 ;
+.item {
+  position: relative;
+  overflow: hidden;
 }
 
-#fazenda{
-  grid-column: span 3 ;
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-#mulherblog{
-  grid-column: span 3 ;
-}
 
-#dedo2{
-  grid-column: span 2;
-}
+  .item.fone{ grid-row: span 3;
+  z-index: 0 ;}
+    .item.mao{ grid-row: span 3;}
+      .item.cone{grid-row: span 2;}
+         .item.cesta{ grid-row: span 3;}
+          .item.mulher{ grid-row: span 3;}
+            .item.dedo{grid-row: span 2;}
+              .item.camaleao{ grid-row: span 3;}
+            .item.mar{ grid-row: span 4;}
+          .item.cachorro{ grid-row: span 3;}
+        .item.laranja{ grid-row: span 5;
+        height: 460px;}
+          .item.suco{grid-row: span 5;
+          height: 460px;}
+            .item.mar2{ grid-row: span 3;
+            height: 320px;}
+          .item.berinjela{ grid-row: span 2;
+          height: 320px;}
+        .item.boca{ grid-row: span 1;
+        height: 240px;}
 
-#calango{
-  grid-column: span 2;
-}
 
-#marcasas{
-  grid-column: span 3;
-}
 
-#pug{
-  grid-column: span 2;
-}
+.people{position: absolute;
+   z-index: 4;
+margin-top: 10%;
+margin-left: 10%;
+background-color: white;
+color: blue;
+width: 100px;
+text-align: center;
+font-size: 12px;
+padding: 5px}
 
-#laranjablog{
-  grid-column: span 2;
+ .inform {position: absolute;
+    color: white;
 }
+     #inform {position: absolute;
+    color: white;
+  font-size: 22px;
+text-decoration: none;}
 
-#liquido{
-  grid-column: span 2;
-}
+#may1 {top: 76%;
+left: 9%;}
+.l1 {top: 72%;
+cursor: pointer;}
 
-#marblog{
-  grid-column: span 2;
-}
+#may2 {top: 55%;
+left: 9%;}
+.l2 {top: 70%;
+left: 9%;
+cursor: pointer;}
 
-#pimentao{
-  grid-column: span 2;
-}
+#may3 {top: 75%;
+left: 9%;}
+.l3 {top: 83%;
+left: 9%;
+cursor: pointer;}
 
-#mulher2{
-  grid-column: span 1;
-}
+#may4 {top: 70%;
+left: 9%;}
+.l4 {top: 78%;
+left: 9%;
+cursor: pointer;}
+
+#may5 {top: 76%;
+left: 9%;}
+.l5 {top: 82%;
+left: 9%;
+cursor: pointer;}
+
+#may6 {top: 72%;
+left: 9%;}
+.l6 {top: 80%;
+left: 9%;
+cursor: pointer;}
+
+#may7 {top: 60%;
+left: 9%;}
+.l7 {top: 72%;
+left: 9%;
+cursor: pointer;}
+
+#may8 {top: 60%;
+left: 9%;}
+.l8 {top: 70%;
+left: 9%;
+cursor: pointer;}
+
+#may9 {top: 60%;
+left: 9%;}
+.l9 {top: 70%;
+left: 9%;
+cursor: pointer;}
+
+#may10 {top: 58%;
+left: 9%;}
+.l10 {top: 70%;
+left: 9%;
+cursor: pointer;}
+
+#may11 {top: 78%;
+left: 9%;}
+.l11 {top: 85%;
+left: 9%;
+cursor: pointer;}
+
+
+#may12 {top: 80%;
+left: 9%;}
+.l12 {top: 87%;
+left: 9%;
+cursor: pointer;}
+
+
+#may13 {top: 70%;
+left: 9%;}
+.l13 {top: 80%;
+left: 9%;
+cursor: pointer;}
+
+
+#may14 {top: 70%;
+left: 9%;}
+.l14 {top: 80%;
+left: 9%;
+cursor: pointer;}
+
+
+#may15 {top: 66%;
+left: 9%;}
+.l15 {top: 76%;
+left: 9%;
+cursor: pointer;}
+
+
